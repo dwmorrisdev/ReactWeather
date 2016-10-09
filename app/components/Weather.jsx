@@ -6,24 +6,21 @@ var openWeatherMap = require('openWeatherMap');
 var Weather = React.createClass({
   getInitialState: function () {
     return {
-        location: 'Miami',
+        location: 'Savannah',
         temp: 88
     }
   },
   handleSearch: function (location) {
-  /*  this.setState({
-      location: location,
-      temp: 23
-    });*/
-    openWeatherMap.getTemp(location).then( function (temp){
-      this.setState({
-          location: location,
-          temp: temp
-        });
-    }, function (errorMessage){
-      alert('errorMessage');
-    })
+    var that = this;
 
+    openWeatherMap.getTemp(location).then(function (temp) {
+      that.setState({
+        location: location,
+        temp: temp
+      });
+    }, function (errorMessage) {
+        alert(errorMessage);
+    });
   },
   render: function () {
     var {temp, location} = this.state;

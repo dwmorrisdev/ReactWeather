@@ -2,7 +2,16 @@ var React = require('react');
 
 var About = (props) => {
   return (
-    <h3>About Component</h3>
+    <div>
+      <h3>About React Weather</h3>
+      <p>This is an app built with node.js and react.js. Weather information
+        is pulled from the Open Weather API by user request and the resulting
+        weather is displayed for the user in a message just below the search box.
+      </p>
+      <p>Built by Dustin Morris 2016.
+        <a href="http://www.designbysparticus.com">designbysparticus</a>
+      </p>
+    </div>
   )
 };
 

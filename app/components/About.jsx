@@ -8,9 +8,9 @@ var About = (props) => {
         is pulled from the Open Weather API by user request and the resulting
         weather is displayed for the user in a message just below the search box.
       </p>
-      <p>Built by Dustin Morris 2016.
-        <a href="http://www.designbysparticus.com">designbysparticus</a>
-      </p>
+      <p>Built by Dustin Morris 2016.</p>
+      <span><a href="http://www.designbysparticus.com">designbysparticus</a></span>
+
     </div>
   )
 };

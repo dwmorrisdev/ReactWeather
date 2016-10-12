@@ -27,7 +27,7 @@ var ErrorModal = React.createClass({
     );
 
     var $modal = $(ReactDOMServer.renderToString(modalMarkup));
-    $(ReactDOM.findDOMNoda(this)).html($modal);
+    $(ReactDOM.findDOMNode(this)).html($modal);
 
     var modal = new Foundation.Reveal($('#error-modal'));
     modal.open();
@@ -35,7 +35,7 @@ var ErrorModal = React.createClass({
   render: function () {
     return (
       <div>
-        
+
       </div>
     );
 

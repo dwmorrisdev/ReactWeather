@@ -1,6 +1,6 @@
 $space-large: 4.5rem;
 $title-color: #555;
-$bkg-img: url('/app/assets/img/clouds.jpg');
+$bkg-img: url('../assets/img/clouds.jpg');
 
 .page-title {
   color: $title-color;
@@ -15,5 +15,6 @@ input[type=search] {
 body {
   background-color: lightblue;
   background-image: $bkg-img;
+  background-size: cover;
 
 }

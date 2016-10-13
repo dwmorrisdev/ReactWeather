@@ -15,7 +15,7 @@ var Nav = React.createClass({
   },
   render: function () {
     return (
-      <div className="top-bar">
+      <div className="top-bar-dark">
         <div className="top-bar-left">
           <ul className="menu">
             <li className="menu-text">React Weather App</li>
@@ -36,7 +36,7 @@ var Nav = React.createClass({
                 <input type="search" placeholder="Search Weather"ref="search"/>
               </li>
               <li>
-                <button type="submit" className="button" value="Get Weather">Search</button>
+                <button type="submit" className="button top-button" value="Get Weather">Search</button>
               </li>
             </ul>
           </form>
